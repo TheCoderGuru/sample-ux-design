@@ -110,6 +110,11 @@ color: #40514e;
     font-size: 14px;
   }
 
+  .wrapper{
+    margin-left: 300px;
+    display: flex;
+  }
+
   .about-section h2{
     font-size: 21px;
   }
@@ -278,6 +283,7 @@ input["text"]{
   margin-left: 409px;
   margin-top: 80px;
   border: 2px solid black;
+  display: flex;
 }
 .wrapper header{
   font-size: 22px;
@@ -307,7 +313,7 @@ form .dbl-field{
   position: absolute;
   top: 50%;
   left: 18px;
-  color: #ccc;
+  color: black;
   font-size: 17px;
   pointer-events: none;
   transform: translateY(-50%);
@@ -324,7 +330,7 @@ form .message textarea{
 }
 .field input::placeholder,
 .message textarea::placeholder{
-  color: #ccc;
+  color: black;
 }
 .field input:focus,
 .message textarea:focus{
@@ -380,8 +386,14 @@ form .button-area{
   display: none;
 }
 @media (max-width: 600px){
+  .wrapper{
+    display: flex;
+    margin-left: -100px;
+    padding: 2px;
+  }
   .wrapper header{
     text-align: center;
+    margin-left: 80px;
   }
   .wrapper form{
     margin: 35px 20px;
